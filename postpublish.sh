@@ -1,9 +1,8 @@
 #!/bin/sh
 
-if [ -f ".npmignore.bak" ]
+if [ -f "package.json.bak" ]
 then
-    echo ".npmignore.bak file found"
-    rm .npmignore
-    mv .npmignore.bak .npmignore
+    rm package.json
+    mv package.json.bak package.json
 fi
  

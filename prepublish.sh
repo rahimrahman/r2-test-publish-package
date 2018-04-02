@@ -1,9 +1,8 @@
 #!/bin/sh
 
-if [ -f ".npmignore" ]
+if [[ -f "package.json" && ! -f ".installing" ]]
 then
-    cp .npmignore .npmignore.bak
-    echo "\n" >> .npmignore
-    echo "src/" >> .npmignore
-    echo "tsconfig.json" >> .npmignore
+    cp package.json package.json.bak
+    grep -v "\"tsconfig\.json\"" package.json > package.tmp && mv package.tmp package.json
+    grep -v "\"src\"" package.json > package.tmp && mv package.tmp package.json
 fi

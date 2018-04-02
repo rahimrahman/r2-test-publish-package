@@ -1,11 +1,17 @@
 {
   "name": "@rahimrahman/r2-test-publish-package",
-  "version": "0.0.4",
+  "version": "0.0.17",
   "description": "Test Package Publishing",
+  "files": [
+    "tsconfig.json",
+    "src",
+    "lib"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "./prepublish.sh",
+    "preinstall": "echo true > .installing",
+    "prepare": "./prepublish.sh && rm -f .installing",
     "postpublish": "./postpublish.sh"
   },
   "private": false,
