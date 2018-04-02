@@ -2,10 +2,15 @@
   "name": "@rahimrahman/r2-test-publish-package",
   "version": "0.0.4",
   "description": "Test Package Publishing",
+  "files": [
+    "tsconfig.json",
+    "src",
+    "lib"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "./prepublish.sh",
+    "prepublishOnly": "./prepublish.sh",
     "postpublish": "./postpublish.sh"
   },
   "private": false,
