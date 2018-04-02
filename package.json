@@ -10,8 +10,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "./prepublish.sh",
-    "postpublish": "./postpublish.sh"
+    "prepack": "./prepack.sh",
+    "postpack": "./postpack.sh"
   },
   "private": false,
   "repository": {
