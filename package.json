@@ -1,0 +1,22 @@
+{
+  "name": "@rahimrahman/r2-test-publish-package",
+  "version": "0.0.4",
+  "description": "Test Package Publishing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "./prepublish.sh",
+    "postpublish": "./postpublish.sh"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahimrahman/r2-test-publish-package.git"
+  },
+  "author": "Rahim Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahimrahman/r2-test-publish-package/issues"
+  },
+  "homepage": "https://github.com/rahimrahman/r2-test-publish-package#readme"
+}
