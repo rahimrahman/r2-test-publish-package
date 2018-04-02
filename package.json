@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepack": "./prepack.sh",
+    "prepublishOnly": "./prepack.sh",
     "postpack": "./postpack.sh"
   },
   "private": false,
