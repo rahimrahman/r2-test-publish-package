@@ -1,3 +1,3 @@
 #!/bin/sh
 
-mv src.notincluded src
+mv src-ignore src
