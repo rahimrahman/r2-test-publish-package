@@ -1,6 +1,6 @@
 {
   "name": "@rahimrahman/r2-test-publish-package",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Test Package Publishing",
   "files": [
     "tsconfig.json",
